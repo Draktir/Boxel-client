@@ -1,0 +1,45 @@
+# Mac
+.DS_Store
+
+# Java
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Maven
+log/
+target/
+dependency-reduced-pom.xml
+
+# AWS
+aws.properties
+
+# Intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+/out/
+/gradle/
+/build/
+.gradle
+
+gradlew
+gradlew.bat
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+
+# Redis
+*.rdb
