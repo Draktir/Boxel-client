@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
+import org.bukkit.scheduler.BukkitTask;
 import rx.Observable;
 import rx.functions.Action0;
 import rx.functions.Action1;
@@ -32,7 +33,7 @@ public class BoxelWebRunnable {
     }
 
 
-    public void renderWebsite(final URL address, final Player player) {
+    public BukkitTask renderWebsite(final URL address, final Player player) {
         final String url = address.toString();
         final Wamp wamp = Wamp.getInstance(mPlugin);
 
@@ -40,7 +41,7 @@ public class BoxelWebRunnable {
         rpcData.add(player.getUniqueId().toString());
         rpcData.add(url);
 
-        new BukkitRunnable() {
+        return new BukkitRunnable() {
             @Override
             public void run() {
                 wamp.getClient()

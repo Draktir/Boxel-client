@@ -1,0 +1,16 @@
+name: BoxelExample
+main: io.github.verizoncraft.boxelclient.example.BoxelExamplePlugin
+description: Boxel Client Example
+website: http://verizoncraft.github.io
+version: 1.0-SNAPSHOT
+
+commands:
+  stream:
+    description: Stream frames from [channel]
+    usage: /<command> [channel]
+  stopstream:
+      description: Stop all streams
+      usage: /<command>
+  website:
+    description: Request and render a website.
+    usage: /<command> [URL]
