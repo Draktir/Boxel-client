@@ -15,8 +15,10 @@ things like the video call and web browser from our [demos](https://verizoncraft
 
 What doesn't it do?
 -------------------
-Voice, telephony, calling, ringtones and other features from the demos [here](https://verizoncraft.github.io)
+Voice, calling, ringtones and other features from the demos [here](https://verizoncraft.github.io)
 are left as an exercise the user.
+
+(We used Websockets, WebRTC, and Redis PUB/SUB to add those capabilities)
 
 Installation
 ------------
@@ -113,7 +115,7 @@ Browsing the source [here](https://github.com/VerizonCraft/Boxel-client/blob/mas
 
 License
 ------------
-This repository and its code are licensed under the BSD 3-Clause license, which can be found [here](https://github.com/VerizonCraft/Boxel-client/blob/master/LICENSE.txt).
+This repository and its code are licensed under a BSD 3-Clause license, which can be found [here](https://github.com/VerizonCraft/Boxel-client/blob/master/LICENSE.txt).
 
 
 
