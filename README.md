@@ -30,7 +30,7 @@ We recommend installing Glowkit, the Glowstone++ fork of the Bukkit API, followi
 
 Installation
 ------------
-Once you've installed Glowkit, installing the boxel-client library should be as simple as:
+Once you've installed your dependencies, installing the boxel-client library should be as simple as:
 
 ```bash
 git clone git@github.com:VerizonCraft/Boxel-client.git  
@@ -38,7 +38,7 @@ cd Boxel-client
 mvn clean install  
 ```
 
-Add boxel-client to your dependencies and you can use it in your plugin.
+Add boxel-client to your project's dependencies and you can use it in your plugin.
 For example, if you're using Maven, add the following to your pom.xml:
 
 ```XML
@@ -60,7 +60,7 @@ need a boxel server to communicate with.
 You can install and run boxel by following the instructions [here](https://github.com/verizoncract/boxel).
 
 Assuming you've got a boxel server running, you can add the following to your plugin's
-config.yml
+config.yml:
 
 ```yml
 # the URI for your shared redis server
@@ -71,7 +71,7 @@ boxel-host: ws://localhost:8080/ws
 boxel-realm: boxel  
 ```
 
-Then, drawing video should be as simple as subscribing to a named stream.
+Then, drawing video should be as simple as subscribing to a named stream:
 ```Java
 
 public class MyPlugin extends JavaPlugin {
@@ -102,7 +102,7 @@ Likewise if you wanted to render a website:
 Example Plugin
 --------------
 Boxel-client contains an example plugin. The easiest way to use the plugin is to
-build a [shaded]( jar containing all the dependencies.
+build a [shaded](https://maven.apache.org/plugins/maven-shade-plugin/) jar containing all the dependencies.
 
 ```bash
 git clone git@github.com:VerizonCraft/Boxel-client.git  
@@ -110,11 +110,11 @@ cd Boxel-client
 mvn clean package  
 ```
 
-Copy boxelclient-1.0-SNAPSHOT.jar from target to your server's plugins directory.
+Copy boxelclient-1.0-SNAPSHOT.jar from target/ to your server's plugins directory.
 The example plugin provides example commands for streaming frames of video and 
 rendering websites.
 
-Browsing the source [here](https://github.com/VerizonCraft/Boxel-client/blob/master/src/main/java/io/github/verizoncraft/boxelclient/example/BoxelExamplePlugin.java) will give you a quick example of how you might use boxel-client in your own plugin.
+Browsing the source [here](https://github.com/VerizonCraft/Boxel-client/blob/master/src/main/java/io/github/verizoncraft/boxelclient/example/BoxelExamplePlugin.java) will give you a quick example of how you might use boxel-client in your own project.
 
 License
 ------------
