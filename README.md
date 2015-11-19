@@ -63,9 +63,12 @@ Assuming you've got a boxel server running, you can add the following to your pl
 config.yml
 
 ```yml
-redis-uri: redis://localhost:6379/0 #the URI for your redis server
-boxel-host: ws://localhost:8080/ws #the address for your boxel server's WAMP router
-boxel-realm: boxel  # your WAMP service's realm
+# the URI for your shared redis server
+redis-uri: redis://localhost:6379/0
+# the address of your boxel server's WAMP router
+boxel-host: ws://localhost:8080/ws 
+# the realm for your boxel service
+boxel-realm: boxel  
 ```
 
 Then, drawing video should be as simple as subscribing to a named stream.
