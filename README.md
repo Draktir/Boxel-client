@@ -93,9 +93,9 @@ public class MyPlugin extends JavaPlugin {
 Likewise if you wanted to render a website:
 
 ```Java
-   # somewhere in your plugin class...
-   BoxelWebClient mWebClient = new BoxelWebClient(this);
-   # assuming you have a location and a player handy...
+   // somewhere in your plugin class 
+   BoxelWebClient mWebClient = new BoxelWebClient(this); 
+   // assuming you have a location and a player handy...
    mWebClient.load(loc, player, args[0], 30, 40);
 ```
 
