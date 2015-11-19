@@ -3,7 +3,7 @@ Boxel-Client
 Boxel-client is a client library for [boxel](https://github.com/verizoncraft/boxel). 
 
 Boxel-client allows your Minecraft plugin to connect to a boxel server and 
-draw the "boxels" it provides on a "screen" made of blocks.
+draw boxelized images to an in-game screen made of blocks.
 
 What does it do?
 ----------------
