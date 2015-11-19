@@ -16,7 +16,7 @@ things like the video call and web browser from our [demos](https://verizoncraft
 What doesn't it do?
 -------------------
 Voice, calling, ringtones and other features from the demos [here](https://verizoncraft.github.io)
-are left as an exercise the user.
+are left as an exercise for the user.
 
 (We used Websockets, WebRTC, and Redis PUB/SUB to add those capabilities)
 
