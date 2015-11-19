@@ -13,23 +13,23 @@ so they can be built on a minecraft server.
 It handles video (at 20FPS) and websites -- you can use these basic tools to build
 things like the video call and web browser from our [demos](https://verizoncraft.github.io/).
 
-What doesn't it do?
--------------------
 Voice, calling, ringtones and other features from the demos [here](https://verizoncraft.github.io)
 are left as an exercise for the user.
 
 (We used Websockets, WebRTC, and Redis PUB/SUB to add those capabilities)
 
-Installation
-------------
+Dependencies
+-------------
 In order to use Boxel-client you'll need to create your own Minecraft plugin. 
-Boxel-client uses the Bukkit API and should be compatible with Bukkit plugins that target 
-Bukkit-compatible servers for Minecraft 1.8.
+Boxel-client uses the Bukkit API and should be compatible with servers for Minecraft 1.8.
 
 Boxel-client was developed against the open-source [GlowStone++](https://glowkitplusplus.github.io)
-Minecraft server implementation and we recommend installing their fork of the Bukkit API 
-following the instructions [here](https://github.com/GlowstonePlusPlus/Glowkit). 
+Minecraft server implementation, you are free to use the Bukkit compatible server of your choice. 
 
+We recommend installing Glowkit, the Glowstone++ fork of the Bukkit API, following the instructions [here](https://github.com/GlowstonePlusPlus/Glowkit). 
+
+Installation
+------------
 Once you've installed Glowkit, installing the boxel-client library should be as simple as:
 
 ```bash
@@ -102,7 +102,7 @@ Likewise if you wanted to render a website:
 Example Plugin
 --------------
 Boxel-client contains an example plugin. The easiest way to use the plugin is to
-build a shaded jar containing all the dependencies.
+build a [shaded]( jar containing all the dependencies.
 
 ```bash
 git clone git@github.com:VerizonCraft/Boxel-client.git  
