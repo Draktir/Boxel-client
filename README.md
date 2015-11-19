@@ -26,8 +26,8 @@ In order to use Boxel-client you'll need to create your own Minecraft plugin.
 Boxel-client uses the Bukkit API and should be compatible with Bukkit plugins that target 
 Bukkit-compatible servers for Minecraft 1.8.
 
-Boxel-client was developed against the fully open-source [Glowkit++](https://glowkitplusplus.github.io)
-server implementation and we recommend installing their fork of the Bukkit API 
+Boxel-client was developed against the open-source [GlowStone++](https://glowkitplusplus.github.io)
+Minecraft server implementation and we recommend installing their fork of the Bukkit API 
 following the instructions [here](https://github.com/GlowstonePlusPlus/Glowkit). 
 
 Once you've installed Glowkit, installing the boxel-client library should be as simple as:
