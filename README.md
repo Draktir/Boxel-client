@@ -55,7 +55,7 @@ For example, if you're using Maven, add the following to your pom.xml:
 Usage
 ------------
 In order to subscribe to streams and request renders of websites and images, you'll 
-need to a boxel server to communicate with. 
+need a boxel server to communicate with. 
 
 You can install and run boxel by following the instructions [here](https://github.com/verizoncract/boxel).
 
